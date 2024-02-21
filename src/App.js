@@ -1,10 +1,12 @@
+import { Fragment } from 'react';
 import Counter from './components/Counter';
 
-
-function App() {
+export function App() {
   return (
-    <Counter />
+    <Fragment>
+      <Header />
+      <Auth />
+      <Counter />
+    </Fragment>
   );
 }
-
-export default App;
